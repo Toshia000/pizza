@@ -14,10 +14,44 @@
 <body>
   <div id="main">
     <div id="header">
-      <img src="images/pizza-guy.png" alt="cook holding pizza" width="600px">
-      <h1>Welcome to Poppa's Pizza!</h1>
-      <h2>We're glad you're here</h2>
+      <img src="images/pizza-guy-medium.jpg" alt="Pizza Guy">
+      <h1>Poppa's Pizza!</h1>
+      <h2>Serving GRC students for 50 years</h2>
+      <hr>
+      <p>We make the best pizza ever. Visit us today.</p>
+      <a id="contact-button" href="#" role="button">Contact Us</a>
     </div>
+
+    <form id="pizza-form" action="#" method="get">
+      <!-- Contact Info -->
+      <fieldset>
+        <legend>Contact Info</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </fieldset>               
+      
+      <!-- Pickup or Delivery -->
+      <fieldset>
+        <legend>Select Pickup or Delivery</legend>
+        
+        <input type="radio" id="pickup" name="method" value="pickup">
+        <label for="pickup">Pickup</label>
+        
+        <input type="radio" id="delivery" name="method" value="delivery">
+        <label for="delivery">Delivery</label>
+
+      </fieldset>
+
+      <!-- Order button -->
+      <button type="submit" id="order-button">Place Order</button>
+    </form>
   </div>
 </body>
 </html>
